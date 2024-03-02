@@ -1,0 +1,423 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;   
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0, 0, 0);    
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+#page>h3{
+    position: absolute;
+    top: 75%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #ffffff;
+    left: 15%;
+    text-decoration: none;
+}
+#page>h4{
+    position: absolute;
+    top:80%;
+    left: 20%;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #ffffff;
+}
+#page>h1{
+position: left;
+}
+#page1>#left-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page1>#left-text>h3{
+    font-weight: 500;
+    color: #000000;
+}
+#page1>#left-text>h1{
+    line-height: 1.5;
+    font-size: 50px;
+}     
+
+#page2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+#page2>h1{
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 5;
+    padding-top: 20px;
+}
+#page2>#card{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 40px 500px 50px;
+    width: 40%;
+    height: 75vh;
+    margin-left: 65px;
+    bottom: 1cm;
+}   
+#card>#textpg3>h6{
+    color: #000000;
+    padding-top: 1cm;
+    font-size: larger;
+    line-height: 1;
+    text-align: left;
+}
+canvas{
+   position: relative;
+   min-width: 80vw;
+   min-height: 80vh;
+   z-index: 9;
+   margin-left: 15.4cm;
+   }
+#loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 20%;
+    width: 100%;
+    font-size: 90px;
+    white-space: nowrap;
+    font-family: gilroy;
+    color: rgb(255, 255, 255);
+}
+#loop>h1{
+    font-weight: 100;
+    animation-name: anim;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #ffffff;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 200px;
+    color:rgb(255, 255, 255);
+    backdrop-filter: blur(10px); 
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    z-index: 100;  
+    display: inline-flex;
+    justify-content: center;
+}
+#page3>h4{
+margin-top: 10px;
+font-size: 100cm;
+}
+#page3>#container>#card1
+{   
+    color: #000000;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 40px 500px 50px;
+    width: 40%;
+    height: 90vh;
+    margin-left: 65px;
+    bottom: 1cm;
+}
+
+#page3>#container>#card1>h1
+{
+color: #000000;
+    padding-top: 1cm;
+    line-height: 1;
+    text-align: left;
+}
+
+
+
+#img img
+{
+    margin-top: 128px;
+    height: 553px;
+    width: 1030px;
+    margin-left: 55px;
+}
+
+footer {
+  position: fixed;
+  top: 98%;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+
+}
+
+
+.copyright-bar p {
+  margin: 0;
+}
+.social-media {
+  display: flex;
+  margin-right: 150px;
+}
+
+.social-icon {
+  position: relative;
+  right: 30cm;    
+  display: flex;
+  justify-content: left;
+  margin: 6px;
+  bottom: 2px;
+  
+}
+
+#instagram img {
+    margin-top: 20px;
+    color: #ffffff;
+    width: 26px; 
+    height:26px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 50%;
+    background-color: #000000;
+    padding: 0px;
+    
+    
+}
+
+#discord img{ 
+    margin-top: 20px;
+    color: #ffffff;
+    width: 26px; 
+    height:26px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 50%;
+    background-color: #000000;
+    padding: 2px;
+    
+}
+
+
+#telegram img{ 
+    margin-top: 20px;
+    color: #ffffff;
+    width: 25px; 
+    height:25px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 50%;
+    background-color: #000000;
+    padding: 3px;
+    
+   
+    
+}
+
+#linkdin img{
+    margin-top: 19px;
+    color: #ffffff;
+    width: 26px; 
+    height: 26px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 50%;
+    background-color: #000000;
+    padding: 1px;
+    
+    }
+
+#github img{
+    margin-top: 20px;
+    color: #ffffff;
+    width: 25px; 
+    height:25px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 50%;
+    background-color: #000000;
+    padding: 1px;
+    
+    
+
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);}
+
+
+
+.overlay {
+    display: none;
+    position:fixed;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 950px;
+    background-color: rgba(107, 102, 102, 0.712);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(15px);
+}
+
+.qr-image img {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+
+.button-container {
+
+    text-align: center;
+    margin-top:  15px;
+}
+
+
+#showQR{
+    font-weight: 800;
+    padding: 0.19cm 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid black 1px;
+    margin-right: -10vw;
+    text-decoration: none;
+}
+
+#refresh
+{
+    margin-top: 10px;
+    padding: 0.16cm 15px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 800;
+    margin-left: 700px;
+}
+#card3
+{
+ position: absolute;
+ height: 35vw;
+ width: 40vw;
+ border-radius: 0px 40px 500px 50px;
+ background-color: #000;
+ left:65px;
+ top:95px;
+ color:white;
+}
+
+#card3>#textpg4>h6{
+    color: white;
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: larger;
+    line-height: 1;
+    text-align: left;
+}
+
+#card4
+{
+ position: absolute;
+ height: 35vw;
+ width: 40vw;
+ border-radius: 50px 0px 40px 500px;
+ background-color: #000000;
+ right:65px;
+ top:95px;
+ color:rgb(255, 255, 255);
+ padding-right: 10%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+
+}
+#h2 h2 {
+    font-size: 20px;
+    color: #ffffff; 
+    margin-top: 35%;
+    margin-left: 250%;
+}
+
+.expicons1 {
+    display: flex;
+    flex-wrap: wrap     ;
+    justify-content: right;
+}
+
+.expicons1 img {
+    width: 55px; 
+    height: 40px; 
+    margin: 10 25px 10px 340px;
+    margin-bottom: 100px;
+    
+}
+.Container1{
+    position: relative;
+    bottom: 50px;
+    left: 150px;
+}
+.expicons2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.expicons2 img {
+    width: 55px; 
+    height: 40px; 
+    margin: 10 25px 10px 34px; 
+}
+.Container2 {
+    position: relative;
+    left: 120px;
+    bottom: 165px;
+}
+.Container3 {
+    position: relative;
+    left: 2px;
+    top: 70px;
+}
+
+.expicons1 img:hover,
+.expicons2 img:hover {
+    opacity: 0.4; 
+}
