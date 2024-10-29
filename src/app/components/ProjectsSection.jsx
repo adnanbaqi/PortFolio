@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Distributed Tranning ",
-    description: "An innovative data processing and analysis pipeline designed to efficiently handle and process large volumes of data. Leveraging cutting-edge technologies and algorithms, the Petals Pipeline aims to provide a robust and scalable solution for data scientists and developers alike.",
+    description: "A Distributed GPU Swarm-Based Model Training System is a high-performance computing architecture designed to efficiently train machine learning models using multiple Graphics Processing Units (GPUs) distributed across a network of machines. This system leverages the combined computational power of a &apos;swarm&apos; of GPUs to accelerate the training process, making it suitable for large-scale models and extensive datasets.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adnanbaqi/Distributed-training.git",
