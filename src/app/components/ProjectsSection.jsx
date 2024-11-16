@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Distributed Tranning ",
+    title: "Distributed Training ",
     description: "A Distributed GPU Swarm-Based Model Training System is a high-performance computing architecture designed to efficiently train machine learning models using multiple Graphics Processing Units (GPUs) distributed across a network of machines. This system leverages the combined computational power of a &apos;swarm&apos; of GPUs to accelerate the training process, making it suitable for large-scale models and extensive datasets.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
