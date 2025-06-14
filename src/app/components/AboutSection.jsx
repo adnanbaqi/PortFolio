@@ -131,7 +131,7 @@ const AboutSection = () => {
                 From <span className="text-emerald-400">predictive modeling</span> and <span className="text-teal-400">natural language processing</span> to <span className="text-orange-400">computer vision</span>, I handle complex machine learning challenges and integrate AI seamlessly into your products.
               </p>
               <p className="text-lg leading-relaxed text-slate-300 mt-4">
-                <span className="text-yellow-400 font-medium">Your vision + my AI expertise = innovative, impactful solutions.</span> Let's create something revolutionary!
+                <span className="text-yellow-400 font-medium">Your vision + my AI expertise = innovative, impactful solutions.</span> Let&apos;s create something revolutionary!
               </p>
             </div>
           </div>
