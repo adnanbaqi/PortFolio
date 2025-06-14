@@ -4,25 +4,28 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
 
-export async function POST(req, res) {
-  const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
+export const dynamic = "force-dynamic"; 
+
+export async function POST(req) {
   try {
+    const { email, subject, message } = await req.json();
+    console.log("Incoming contact form:", email, subject, message);
+
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [fromEmail, email],
-      subject: subject,
-      react: (
-        <>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
-          <p>{message}</p>
-        </>
-      ),
+      to: [fromEmail],
+      subject,
+      html: `
+        <h1>${subject}</h1>
+        <p><strong>From:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
     });
-    return NextResponse.json(data);
+
+    return NextResponse.json({ success: true, data }, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ error });
+    console.error("Error sending email:", error);
+    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
